@@ -1,7 +1,7 @@
 import { Context } from '@netlify/functions';
 import { Story } from './models/event';
 
-export default async (req: Request, context: Context) => {
+export default async (_: Request, __: Context) => {
     const storyblokBaseUrl = 'https://api.storyblok.com/v2/cdn';
     const token = 'token=acu9a7B7tQrUQ6dr0rQTqgtt';
     
