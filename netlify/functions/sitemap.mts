@@ -14,6 +14,10 @@ export default async (_: Request, __: Context) => {
                     <loc>https://bergharenklassiek.nl</loc>
                     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
                 </url>
+                <url>
+                    <loc>https://bergharenklassiek.nl/contact</loc>
+                    <lastmod>2024-03-01T00:00:00+00:00</lastmod>
+                </url>
                 ${(eventsData['stories'] as Story[]).map((story) => `
                     <url>
                         <loc>https://bergharenklassiek.nl/events/${story.slug}</loc>
