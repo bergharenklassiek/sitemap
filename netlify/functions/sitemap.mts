@@ -20,7 +20,7 @@ export default async (_: Request, __: Context) => {
                 </url>
                 ${(eventsData['stories'] as Story[]).map((story) => `
                     <url>
-                        <loc>https://bergharenklassiek.nl/events/${story.slug}</loc>
+                        <loc>https://bergharenklassiek.nl/agenda/${story.slug}</loc>
                         <lastmod>${story.published_at.split('.')[0]}+00:00</lastmod>
                     </url>
                 `).join('')}
